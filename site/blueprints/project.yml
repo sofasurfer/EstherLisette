@@ -1,0 +1,38 @@
+title: Project
+
+files:
+  sortable: true
+
+pages: false
+
+fields:
+  seo: seo
+  
+  title:
+    label: Title
+    type:  text
+    width: 4/4
+
+  text:
+    label: Text
+    type:  textarea
+
+  imglist:
+    label: Images
+    type: structure
+    style: table
+    fields:
+      title:
+        label: Title
+        type: textarea      
+      location:
+        label: Size
+        type: select
+        options:
+          full: Full
+          half: Half
+          line: Line
+          text: Text
+      image:
+        label: Image
+        type: image

@@ -1,0 +1,29 @@
+title: Contact
+
+pages: false
+
+options: 
+  delete: false
+  status: false
+
+fields:
+  seo: seo
+ 
+  title:
+    label: Title
+    type: title
+  
+  intro:
+    label: Intro
+    type: textarea
+
+  content1:
+    label: Col 1
+    type: textarea
+    width: 2/4
+
+  content2:
+    label: Col 1
+    type: textarea
+    width: 2/4
+

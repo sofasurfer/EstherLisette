@@ -1,0 +1,29 @@
+title: Home
+
+pages: false
+
+fields:
+  seo: seo
+
+  title:
+    label: Title
+    type:  text
+
+  intro:
+    label: Intro
+    type:  textarea
+
+  imglist:
+    label: Images
+    type: structure
+    style: table
+    fields:
+      image:
+        label: Image
+        type: image
+      title:
+        label: Title
+        type: textarea      
+      cta:
+        label: Link
+        type: url  

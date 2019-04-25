@@ -1,0 +1,8 @@
+{
+  "name": "kirby-piwik-widget",
+  "version": "1.0.1",
+  "description": "Shows a Piwik-Widget in the Panel",
+  "author": "Maurice Renck <hello@maurice-renck.de>",
+  "license": "MIT",
+  "type": "kirby-plugin"
+}
