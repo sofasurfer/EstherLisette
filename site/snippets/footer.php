@@ -7,7 +7,7 @@
     <div class="row">
         <div class="col-md-12">
             <center>
-                © 2019 Esther-Lisette Ganz, All Rights Reserved
+                © 2019 Esther-Lisette Ganz
             </center>
         </div>
     </div>
