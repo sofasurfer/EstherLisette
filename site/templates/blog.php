@@ -1,5 +1,8 @@
 <?php snippet('header') ?>
 
+<?php
+$isarchive = false;
+?>
 
 <div class="container-dark">
   <div class="container main" role="main">
@@ -15,18 +18,23 @@
     <?php if($articles->count()): ?>
       <?php foreach($articles as $article): ?>
 
-        <?php if( $article->date() < time() ): ?>
+        <?php if( $article->date() < time() && !$isarchive): ?>
         <div class="row">
           <header class="col-md-8">
             <h2>Archiv</h2>
           </header>
         </div>
+        <?php $isarchive = true; ?>
         <?php endif; ?>
-
+        <div class="row">
+          <div class="col-md-12">
+            <hr class="article" />
+          </div>
+        </div>
         <article class="row">
 
           <header class="col-md-8 padding">
-            <p class="article-date"><?= $article->date('F jS, Y') ?></p>
+            <p class="article-date"><?= $article->date('d.m.Y') ?></p>
             
             <h2 class="article-title">
               <?= $article->title()->html() ?>

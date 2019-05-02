@@ -4,7 +4,7 @@
 
     <div class="row">
 
-      <div class="col-md-8 padding">
+      <div class="col-md-8 padding text-indent">
         <?= $page->content1()->kirbytext() ?>
       </div>
 
