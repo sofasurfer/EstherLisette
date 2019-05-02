@@ -426,7 +426,6 @@ footer{
 .showcase-link {
     position:relative;
     transition-duration: 0.1s;
-
     display: flex;
     align-items: center;
     justify-content: center;    
@@ -434,6 +433,7 @@ footer{
 
 .showcase-link:hover{
     background-color: #D8D3CD;
+    opacity: 0.9;
 }
 
 .showcase-link .showcase-caption{
@@ -442,19 +442,21 @@ footer{
     text-align: center;
     position: absolute;
     opacity: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
     font-size: 16px;
     transition-duration: 0.1s;  
-    padding-left: 60px;
-    padding-right: 60px;  
+    background-color: #D8D3CD;
 
 }
 
 .showcase-link:hover .showcase-caption{
-    opacity: 1;
+    opacity: 0.8;
 }
 
 .showcase-link:hover .img-thumbnail{
-    opacity: 0;
     background: #262626;
 }
 

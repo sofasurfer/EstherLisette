@@ -21,7 +21,6 @@ if(isset($limit)) $projects = $projects->limit($limit);
 ?>
 
 <div class="row grid">
-  <?php $ic = 0; ?>
   <?php foreach($projects as $project): ?>
     <?php if(  $project->feautured() == 'active' ): ?>
       <div class="col-sm-6 col-md-4 showcase-thumb">
@@ -30,19 +29,9 @@ if(isset($limit)) $projects = $projects->limit($limit);
               <img src="<?= $image->url() ?>" alt="Thumbnail for <?= $project->title()->html() ?>" class="img-thumbnail" />
             <?php endif ?>
             <div class="showcase-caption">
-              <h3 class="showcase-title"><?= $project->title()->html() ?></h3>
-              <p><i class="arrow white small"></i> <?= $project->year() ?></p>
             </div>
           </a>
       </div>
-      <?php if( $ic == 1 ): ?>
-        <div class="col-sm-6 col-md-4 showcase-thumb float-right">
-            <img class="img-fluid" src="/assets/images/adresse-blau.png">
-        </div>
-      <?php endif; ?>
-      <?php $ic++; ?>
     <?php endif; ?>
-
   <?php endforeach ?>
-
 </div>
