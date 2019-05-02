@@ -25,7 +25,7 @@
 
         <article class="row">
 
-          <header class="col-md-8">
+          <header class="col-md-8 padding">
             <p class="article-date"><?= $article->date('F jS, Y') ?></p>
             
             <h2 class="article-title">
