@@ -27,11 +27,13 @@
 
           <figure id="figure-<?= $counter; ?>" class="img-<?= $image->location(); ?> <?= ($right) ? 'right' : 'left'; ?> ">
             <img src="<?= $image->image()->toFile()->url() ?>" class="img-thumbnail" alt="<?= $image->title(); ?>" />
+
+            <?php if ( !$image->title()->empty() ): ?>
+              <div class="p-caption"><?= $image->title()->kirbytext(); ?></div>
+            <?php endif; ?>
+            
           </figure>
 
-          <?php if ( !$image->title()->empty() ): ?>
-            <div class="p-caption"><?= $image->title()->kirbytext(); ?></div>
-          <?php endif; ?>
 
           <?php
           if( $image->location() == 'half' && !$right ){
