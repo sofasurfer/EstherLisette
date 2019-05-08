@@ -274,9 +274,12 @@ body.about figure{
     top:50%;
     left:50%;
     transform:translate(-50%, -50%);
-    padding: 0px;
+
+    z-index: 55;
     margin: 0px;
-    padding-top: 200px;
+    padding: 0px;
+    opacity: 1;
+    background-color: transparent;
 }
 
 
@@ -520,7 +523,7 @@ footer p a{
 }
 
 .showcase-link:hover .showcase-caption{
-    opacity: 0.8;
+    opacity: 0.1;
 }
 
 .showcase-link:hover .img-thumbnail{
