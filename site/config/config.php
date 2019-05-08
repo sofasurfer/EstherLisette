@@ -24,6 +24,9 @@ c::set('debug',true);
 // c::set('piwik_baseUrl', 'https://piwik.sofasurfer.org/');
 // c::set('piwik_siteId', '36');
 
+return [
+  'locale' => 'de_DE.utf-8'
+];
 
 /*
 

@@ -14,11 +14,11 @@ fields:
   title:
     label: Title
     type: title
-    
-  intro:
-    label: Intro
-    type: textarea
-    
+       
   text:
     label: Text
+    type: textarea
+
+  impressum:
+    label: Impressum
     type: textarea

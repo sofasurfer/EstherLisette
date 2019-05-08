@@ -11,8 +11,6 @@
                 <?php if($image = $project->image()->toFile() ): $thumb = $image->crop(900, 900); ?>
                   <img src="<?= $image->url() ?>" alt="Thumbnail for <?= $project->title()->html() ?>" class="img-thumbnail" />
                 <?php endif ?>
-                <div class="showcase-caption">
-                </div>
               </a>
           </div>
 

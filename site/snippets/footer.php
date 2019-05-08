@@ -8,6 +8,11 @@
         <div class="col-md-12">
             <center>
                 © 2019 Esther-Lisette Ganz
+                <?php 
+                if( $page->impressum() ){
+                    echo $page->impressum()->kirbytext();
+                }
+                ?>
             </center>
         </div>
     </div>

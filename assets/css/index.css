@@ -76,14 +76,14 @@ strong{
 .small p {
     margin-bottom: 20px;    
 }
+.small p a{
+    display: inline-block;
+    margin-top: 20px;    
+}
 .text-indent p{
     text-indent: 50px;    
 }
 
-body.default figure{
-    margin-top: 50px;
-    margin-bottom: 30px;
-}
 
 /*.container,
 .container-fluid{
@@ -126,7 +126,9 @@ p{
     margin-bottom: 25px;
 }
 
-.small p{
+
+.small p,
+.small-link p{
     font-size: 19px;
     line-height: 23px;    
 }
@@ -222,6 +224,11 @@ body.contact .container-dark img{
     height: auto;
 }
 
+body.about figure{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
 .c-offcanvas-trigger span:nth-child(1), .c-offcanvas-trigger span:nth-child(3) {
     -webkit-transition: all .2s ease;
     transition: all .2s ease;
@@ -253,9 +260,7 @@ body.contact .container-dark img{
     right: 0px;
 
 
-    background-color: #D8D3CD;
-
-    opacity: 0.9;
+    background-color: rgba(216,211,205,0.9);
 
     z-index: 50;
 
@@ -269,8 +274,9 @@ body.contact .container-dark img{
     top:50%;
     left:50%;
     transform:translate(-50%, -50%);
-
-
+    padding: 0px;
+    margin: 0px;
+    padding-top: 200px;
 }
 
 
@@ -317,7 +323,7 @@ input[type=checkbox]:checked ~ nav .menu-list{
 }
 
 input[type=checkbox]:checked ~ main .container-fluid.main{
-    padding-top: 220px;
+    padding-top: 230px;
 }
 input[type=checkbox]:checked ~ header .nav-opener{
     transform: rotate(90deg);    
@@ -422,7 +428,14 @@ hr.article{
 }
 
 footer{
-    line-height: 5rem;
+    margin-bottom: 5rem;
+}
+footer p{
+    font-size: 16px;
+    line-height: 18px;
+}
+footer p a{
+    border-bottom: solid 1px;
 }
 /*footer{
     position: absolute;
