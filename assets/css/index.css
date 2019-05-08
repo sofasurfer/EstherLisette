@@ -269,6 +269,11 @@ body.contact .container-dark img{
     top:50%;
     left:50%;
     transform:translate(-50%, -50%);
+    z-index: 55;
+    margin: 0px;
+    padding: 0px;
+    opacity: 1;
+    background-color: transparent;
 
 
 }
@@ -507,7 +512,7 @@ footer{
 }
 
 .showcase-link:hover .showcase-caption{
-    opacity: 0.8;
+    opacity: 0.1;
 }
 
 .showcase-link:hover .img-thumbnail{
