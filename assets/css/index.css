@@ -835,6 +835,7 @@ figure .p-caption{
     }
     .p-caption p{
         font-size: 1.1rem;
+        padding-left: 15px;
     }
     #navbarHeader{
         padding: 25px 27px;
