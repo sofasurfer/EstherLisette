@@ -895,13 +895,14 @@ figure .p-caption{
     figure.img-half,
     figure.img-full{
         margin-bottom: 25px;
-        margin-left: -25px;        
+        margin-left: -25px;
+        margin-right: -25px;      
     }
     figure.img-half.left,
     figure.img-half.right{
         width: calc(100% + 30px);;
         margin-left: -25px;
-        margin-right: -15px;
+        margin-right: -25px;
     }
     body.about figure img{
         max-width: 100%;
