@@ -27,11 +27,11 @@
 </label>
 <?php snippet('menu') ?>
 
-<header>
+<header class="main">
   <div class="" id="navbarHeader">
     <div class="container-fluid">
       <div class="row justify-content-md-center">
-        <div class="col-md-4 col-sm-8 col-xs-8">
+        <div class="col-md-4 ">
             <a href="/" title="Home" class="logo" />
               <img class="img-fluid logo-1" src="/assets/images/logo-blau.png" />
               <img class="img-fluid logo-2" src="/assets/images/logo-white.png" />
