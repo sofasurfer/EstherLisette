@@ -29,9 +29,7 @@
             <img src="<?= $image->image()->toFile()->url() ?>" class="img-thumbnail" alt="<?= $image->title(); ?>" />
 
             <?php if ( !$image->title()->empty() ): ?>
-              <div class="p-caption"><?= $image->title()->kirbytext(); ?></div>
-            <?php else: ?>
-              <div class="p-caption"><p>&nbsp;</p></div>              
+              <div class="p-caption"><?= $image->title()->kirbytext(); ?></div>             
             <?php endif; ?>
             
           </figure>

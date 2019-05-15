@@ -58,8 +58,7 @@ h2{
 
 }
 .article-date{
-    font-size: 34px;
-    font-weight: 400;    
+    margin-bottom: 0px;    
 
 }
 a{
@@ -280,6 +279,7 @@ body.about figure{
     z-index: 55;
     margin: 0px;
     padding: 0px;
+    margin-top: 60px;
     opacity: 1;
     background-color: transparent;
 }
@@ -350,9 +350,10 @@ input[type=checkbox]:checked ~ header .logo-1{
 input[type=checkbox]:checked ~ header .logo-2{
     opacity: 1;
     display: block;
-    position: absolute;
+    position: fixed;
+    width: 500px;
     z-index: 100;
-    top: 0px; 
+    top: 50px; 
 }
 
 
@@ -424,7 +425,7 @@ input[type=checkbox]:checked ~ .c-offcanvas-trigger span:nth-child(3) {
 }
 
 article.row{
-    padding-top: 30px;
+    padding-top: 25px;
     padding-bottom: 25px;
 }
 article.row .article-title{
@@ -496,6 +497,7 @@ footer p a{
 
 .img-thumbnail{
     padding: 0;
+    width: 100%;
     border-radius: 0;
     border: none;
     background-color: transparent;
@@ -617,9 +619,9 @@ figure .p-caption{
     margin-bottom: 60px;
 }
 
-@media only screen and (min-width: 1400px ){
+@media only screen and (min-width: 1800px ){
     .container{
-        max-width: 1300px;
+        max-width: 1600px;
     }
 }
 
@@ -816,7 +818,7 @@ figure .p-caption{
         width: 100%;
     }
     .c-offcanvas-trigger{
-        top: 30px;
+        top: 40px;
         right: 25px;
         width: 40px;
 
@@ -836,12 +838,13 @@ figure .p-caption{
         line-height: 25px;
     }
     .small{
-        margin-top: 50px;
+        margin-top: 35px;
     }
     .small p{
         font-size: 1rem;
-        padding-left: 25px;
-        padding-right: 25px;
+        padding-left: 0px;
+        padding-right: 0px;
+        line-height: 20px;
     }
     .text-indent p {
         text-indent: 20px;
@@ -856,6 +859,8 @@ figure .p-caption{
     }
     #navbarHeader{
         padding: 25px 27px;
+        background-color: rgba(216,211,205,0.2);
+
     }
     input[type=checkbox]:checked ~ header{
         background-color: transparent;
@@ -882,7 +887,7 @@ figure .p-caption{
         margin-top: 0px;
     }
     .home .container-fluid.main{
-        padding-top: 50px;
+        padding-top: 23px;
     }
     .bg-dark2{
         height: 50px;
@@ -903,11 +908,19 @@ figure .p-caption{
         margin-bottom: 15px;
     }
     .menu{
-        padding-top: 45px;
-        padding-bottom: 60px;
+        padding-top: 15px;
+        padding-bottom: 0px;
+    }
+    .menu-list{
+        padding-top: 0px;
+        margin-top: 10px;
     }
     .menu-item{
-        font-size: 2.9rem;
+        font-size: 2.8rem;
+        padding-bottom:8px;
+    }
+    hr.article{
+        height: 3px;
     }
     figure .caption{
         font-size: 12px;        
@@ -950,20 +963,26 @@ figure .p-caption{
     .showcase-thumb{
         margin-bottom: 10px;
     }
+    
     .showcase-thumb:nth-child(odd){
-        padding-left: 5px;
+        padding-left: 15px;
         padding-right: 5px;
     }
     .showcase-thumb:nth-child(even){
         padding-left: 5px;
-        padding-right: 5px;
+        padding-right: 15px;
+    }
+
+    .showcase-thumb:last-child{
+        padding-left: 15px;
     }
 
     footer{
         font-size: 1rem;
         margin-top: 2rem;
-        margin-bottom: 3rem;    
+        margin-bottom: 25px;    
     }
+
     .btn-footer{
         font-size: 1.5rem;        
         line-height: 50px;
