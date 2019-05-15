@@ -30,6 +30,8 @@
 
             <?php if ( !$image->title()->empty() ): ?>
               <div class="p-caption"><?= $image->title()->kirbytext(); ?></div>
+            <?php else: ?>
+              <div class="p-caption"><p>&nbsp;</p></div>              
             <?php endif; ?>
             
           </figure>

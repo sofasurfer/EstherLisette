@@ -8,11 +8,11 @@
     </div>
     <div class="row">
 
-      <div class="col-md-8 padding text-indent">
+      <div class="col-lg-8 col-md-12 padding text-indent">
         <?= $page->content1()->kirbytext() ?>
       </div>
 
-      <div class="col-md-4 small">
+      <div class="col-lg-4 col-md-12 small">
         <?= $page->content2()->kirbytext() ?>
       </div>
 
