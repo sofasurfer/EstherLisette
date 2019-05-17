@@ -34,6 +34,11 @@
             isMobile = true;
         }   
 
+        $('#c-offcanvas-trigger').click(function(){
+
+            $('#logo-2').width($('#logo-1').width());
+        });
+
         if( $('.p-detail').length && !isMobile  ){
             return false;
             $(window).scroll(function () {
@@ -66,6 +71,7 @@
         $('main').imagesLoaded( function() {
             $('.grid').masonry({}); 
         });
+
     });
 
 </script>

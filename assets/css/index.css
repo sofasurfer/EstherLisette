@@ -769,7 +769,8 @@ figure .p-caption{
         padding-right: 40px;
     }
 
-    
+
+
     .col-sm-6{
         flex: 0 0 50%;
         max-width: 50%;
@@ -777,11 +778,11 @@ figure .p-caption{
     .p-title{
         padding-top: 0px;
     }
-/*    .p-line,
+    .p-line,
     figure.img-full{
-        margin-left: -15px;
-        margin-right: -15px;
-    }*/
+/*        margin-left: -15px;
+        margin-right: -15px;*/
+    }
     figure .caption{
         margin-left: 30px;
         margin-right: 30px;
@@ -991,6 +992,11 @@ figure .p-caption{
         padding-left: 40px;
         padding-right: 40px;
     }
+    .small, .col-md-12, .col-sm-6,.col-md-8, .col-sm-8, .col-ld-6{
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+
     .showcase-thumb{
         width:50%;
     }
