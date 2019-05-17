@@ -70,13 +70,16 @@ $isarchive = false;
           <h2 class="article-title">
             <?= $article->title()->html() ?>
           </h2>
-
+          <div class="img-fullwidth hide-desktop">
+            <?php snippet('coverimage', $article) ?>
+            <div class="small-link"><?= $article->caption()->kirbytext() ?></div>
+          </div>
           <?= $article->text()->kirbytext() ?>
 
         </header>
 
 
-        <div class="col-md-4 text">
+        <div class="col-md-4 text hide-mobile">
           <?php snippet('coverimage', $article) ?>
           <div class="small-link"><?= $article->caption()->kirbytext() ?></div>
         </div>
