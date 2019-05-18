@@ -918,6 +918,8 @@ figure .p-caption{
     }
     body.home main{
         margin-top: 0px;
+        padding-left: 10px;
+        padding-right: 10px;
     }
     .home .container-fluid.main{
         padding-top: 23px;
