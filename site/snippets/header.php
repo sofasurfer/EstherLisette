@@ -4,6 +4,8 @@
 
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  
+  <link rel="icon" href="favicon.png">
 
   <?php if($page->isHomePage()): ?>
     <?php echo seo('title'); ?>
@@ -13,7 +15,7 @@
   <?php echo seo('description'); ?>
 
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-  <?= css('assets/css/index.css?v=8.6') ?>
+  <?= css('assets/css/index.css?v=8.7') ?>
 
 
 </head>
