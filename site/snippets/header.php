@@ -13,7 +13,7 @@
   <?php echo seo('description'); ?>
 
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-  <?= css('assets/css/index.css?v=8.1') ?>
+  <?= css('assets/css/index.css?v=8.5') ?>
 
 
 </head>
@@ -31,7 +31,7 @@
   <div class="" id="navbarHeader">
     <div class="container-fluid">
       <div class="row justify-content-md-center">
-        <div class="col-md-4 ">
+        <div class="col-md-6 col-lg-4">
             <a href="/" title="Home" class="logo" />
               <img id="logo-1" class="img-fluid logo-1" src="/assets/images/logo-blau.png" />
               <img id="logo-2" class="img-fluid logo-2" src="/assets/images/logo-white.png" />

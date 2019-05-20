@@ -23,7 +23,7 @@ $isarchive = false;
 
     <?php if($articles->count() && strtotime($articles->first()->dateend()) < time() ): ?>
       <div class="row">
-        <header class="col-md-8">
+        <header class="col-lg-8 col-md-12">
           <?= $page->text()->kirbytext(); ?>
         </header>
       </div>
@@ -64,7 +64,7 @@ $isarchive = false;
       </div>
       <article class="row">
 
-        <header class="col-md-8 padding">
+        <header class="col-lg-8 col-md-12 padding">
           <p class="article-date"><?= $adate ?></p>
           
           <h2 class="article-title">

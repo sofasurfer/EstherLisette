@@ -1,3 +1,9 @@
+/*
+
+- Datum noch in EN
+
+*/
+
 
 @font-face {
   font-family: 'Karla-Regular';
@@ -223,6 +229,10 @@ body.home .c-offcanvas-trigger{
 body.contact .container-dark img{
     width: 100%;
     height: auto;
+}
+body.contact h3{
+    font-size: 25px;
+    margin-bottom: 25px;
 }
 
 body.about figure{
@@ -667,6 +677,11 @@ figure .p-caption{
         z-index: 0;
         height: 1px;
     }
+    
+    h1{
+        margin-bottom: 50px;
+    }
+
     .hide-mobile{
         display: none;
     }
@@ -674,10 +689,10 @@ figure .p-caption{
         display: block;
     }
     main{
-        margin-top: 200px;
+        margin-top: 160px;
     }
     body.home main{
-        margin-top: 70px;
+        margin-top: 55px;
     }
     header.main{
         position: fixed;
@@ -688,7 +703,7 @@ figure .p-caption{
         width: 100%;
     }
     .c-offcanvas-trigger{
-        top: 60px;
+        top: 40px;
         right: 25px;
         width: 40px;
         position: fixed!important;
@@ -703,8 +718,7 @@ figure .p-caption{
     }
     #navbarHeader{
         background-color: rgba(216,211,205,0.2);
-        padding: 50px 0px 50px;
-        height: 160px;        
+        padding: 25px 0px 25px;
     }
     .logo-1,
     .logo-2{
@@ -712,11 +726,11 @@ figure .p-caption{
         margin: 0 auto;
     }
 
-    h1,h2,
-    .btn-footer,
-    .branding{
-        font-size: 1.6rem;
+    article.row .article-title{
+        margin-top: 20px;
     }
+
+
     svg.arrow{
         width: 15px;
     }
@@ -728,12 +742,26 @@ figure .p-caption{
     .navigation{
         width: 100%;
     }
-
+    hr.article{
+        height: 3px;
+    }
     body.project .navigation{
         width: 100%;    
     }
+    body .container.main{
+        max-width: 100%;
+    }
+    body.blog .col-lg-8{
+        max-width: 100%;
+        flex: 0 0 100%;
+    }
+    body.blog article .img-fluid{
+        width: 100%;
+    }
 
-
+    footer{
+        margin-top: 50px;
+    }
     footer .container-fluid{
         padding-left: 40px;
         padding-right: 40px;
@@ -769,8 +797,12 @@ figure .p-caption{
         padding-right: 40px;
     }
 
-
-
+    .small-link{
+        margin-bottom: 40px;
+    }
+    .small {
+        margin-top: 35px;
+    }
     .col-sm-6{
         flex: 0 0 50%;
         max-width: 50%;
@@ -788,15 +820,19 @@ figure .p-caption{
         margin-right: 30px;
     }
 
-    figure.img-half{
-        width: calc( 50% - 2px );
-        margin-left: -15px;
-    }
 
-    figure.img-half.right {
-        width: calc( 50% - 2px );        
-        margin-right: -15px;
-    } 
+    figure.img-half,
+    figure.img-full{
+        margin-bottom: 25px;
+        margin-left: -25px;
+        margin-right: -25px;      
+    }
+    figure.img-half.left,
+    figure.img-half.right{
+        width: 100%!important;
+        margin-left: -25px;
+        margin-right: -25px;
+    }
 
     .container-fluid.main{
         padding-top: 120px;
@@ -811,7 +847,7 @@ figure .p-caption{
         padding-right: 10px;
     }
     .p-caption p{
-        padding-left: 0px;
+        padding-left: 15px;
     }
     .padding p{
         padding-right: 0px;
@@ -846,6 +882,11 @@ figure .p-caption{
         margin-bottom: 25px;
     }
 
+    h1,h2,
+    .btn-footer,
+    .branding{
+        font-size: 1.6rem;
+    }
 
     .logo-1,
     .logo-2{
@@ -858,6 +899,12 @@ figure .p-caption{
         font-size: 1.2rem;
         line-height: 25px;
     }
+
+    body.contact h3{
+        font-size: 1.2rem;
+        margin-bottom: 20px;
+    }
+
     .small{
         margin-top: 35px;
     }
@@ -917,7 +964,7 @@ figure .p-caption{
         margin-right: -25px;
     }
     body.home main{
-        margin-top: 0px;
+        margin-top: 10px;
         padding-left: 10px;
         padding-right: 10px;
     }
