@@ -830,7 +830,7 @@ figure .p-caption{
     }
     figure.img-half.left,
     figure.img-half.right{
-        width: 100%!important;
+        width: auto!important;
         margin-left: -25px;
         margin-right: -25px;
     }
