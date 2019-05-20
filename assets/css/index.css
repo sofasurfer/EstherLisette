@@ -523,7 +523,7 @@ footer p a{
 
 .showcase-link:hover{
     background-color: #D8D3CD;
-    opacity: 0.9;
+    opacity: 0.6;
 }
 
 .showcase-link .showcase-caption{
@@ -543,7 +543,7 @@ footer p a{
 }
 
 .showcase-link:hover .showcase-caption{
-    opacity: 0.1;
+    opacity: 0.2;
 }
 
 .showcase-link:hover .img-thumbnail{
