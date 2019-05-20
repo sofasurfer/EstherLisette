@@ -35,7 +35,6 @@
         }   
 
         $('#c-offcanvas-trigger').click(function(){
-
             $('#logo-2').width($('#logo-1').width());
         });
 
