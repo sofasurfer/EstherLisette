@@ -26,7 +26,7 @@
         <?php else: ?>
 
           <figure id="figure-<?= $counter; ?>" class="img-<?= $image->location(); ?> <?= ($right) ? 'right' : 'left'; ?> ">
-            <img src="<?= $image->image()->toFile()->url() ?>" class="img-thumbnail" alt="<?= $image->title(); ?>" />
+            <img data-src="<?= $image->image()->toFile()->url() ?>" class="img-thumbnail lazy" alt="<?= $image->title(); ?>" />
 
             <?php if ( !$image->title()->empty() ): ?>
               <div class="p-caption"><?= $image->title()->kirbytext(); ?></div>             
