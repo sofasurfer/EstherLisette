@@ -692,7 +692,7 @@ figure .p-caption{
         margin-top: 160px;
     }
     body.home main{
-        margin-top: 55px;
+        margin-top: 50px;
     }
     header.main{
         position: fixed;
@@ -779,9 +779,10 @@ figure .p-caption{
         background-color: transparent;
     }
     input[type="checkbox"]:checked ~ header .logo-2{
-        top: 50px;
+        top: 25px;
         width: 300px;
         margin: 0 auto;
+        left: calc(50% - 150px);
     }
     .contact-info{
         margin-top: 0px;
@@ -852,17 +853,7 @@ figure .p-caption{
     .padding p{
         padding-right: 0px;
     }    
-    .showcase-thumb{
-        margin-bottom: 30px;
-    }
-    .showcase-thumb:nth-child(odd){
-        padding-left: 15px;
-        padding-right: 15px;
-    }
-    .showcase-thumb:nth-child(even){
-        padding-left: 15px;
-        padding-right: 15px;
-    }
+
     .showcase-thumb.float-right{
         display: none;
     }
@@ -940,6 +931,7 @@ figure .p-caption{
     }
     input[type="checkbox"]:checked ~ header .logo-2{
         top: 25px;
+        left: 25px;
         width: 250px;
     }
     .img-fullwidth{
