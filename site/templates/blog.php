@@ -6,6 +6,15 @@ $first = true;
 $isarchive = false;
 
 
+$DAYS = array(
+  '1' => 'Mo',
+  '2' => 'Di',
+  '3' => 'Mi',
+  '4' => 'Do',
+  '5' => 'Fr',
+  '6' => 'Sa',
+  '7' => 'So',
+);
 
 
 ?>
@@ -34,7 +43,7 @@ $isarchive = false;
         setlocale(LC_ALL, 'de_DE');
         if( $article->dateend() == "" ){
           $d1 = $article->date();
-          $adate = date( "D d.m.Y", $d1);
+          $adate = $DAYS[date( "N", $d1)] . ' ' . date( "d.m.Y", $d1);
         }else{
           $d1 = $article->date();
           $d2 = strtotime($article->dateend());
@@ -45,7 +54,7 @@ $isarchive = false;
               $adate = date( "d.", $d1) . ' - ' . date( "d.m.Y", $d2);
             }
           }else{
-            $adate = date( "D d.m.Y", $d1);
+            $adate = $DAYS[date( "N", $d1)] . ' ' . date( "d.m.Y", $d1);
           }
         }
       ?>
