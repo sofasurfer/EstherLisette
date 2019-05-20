@@ -521,7 +521,7 @@ footer p a{
     justify-content: center;    
 }
 
-.showcase-link:hover{
+.showcase-link.hover:hover{
     background-color: #D8D3CD;
     opacity: 0.6;
 }
@@ -542,7 +542,7 @@ footer p a{
 
 }
 
-.showcase-link:hover .showcase-caption{
+.showcase-link.hover:hover .showcase-caption{
     opacity: 0.2;
 }
 
