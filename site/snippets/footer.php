@@ -73,9 +73,11 @@
 
     });
 
+    /*
+    Lacy Load
+    */
     document.addEventListener("DOMContentLoaded", function() {
       var lazyloadImages;    
-
       if ("IntersectionObserver" in window) {
         lazyloadImages = document.querySelectorAll(".lazy");
         var imageObserver = new IntersectionObserver(function(entries, observer) {
@@ -88,19 +90,16 @@
             }
           });
         });
-
         lazyloadImages.forEach(function(image) {
           imageObserver.observe(image);
         });
       } else {  
         var lazyloadThrottleTimeout;
         lazyloadImages = document.querySelectorAll(".lazy");
-        
         function lazyload () {
           if(lazyloadThrottleTimeout) {
             clearTimeout(lazyloadThrottleTimeout);
           }    
-
           lazyloadThrottleTimeout = setTimeout(function() {
             var scrollTop = window.pageYOffset;
             lazyloadImages.forEach(function(img) {
@@ -116,7 +115,6 @@
             }
           }, 20);
         }
-
         document.addEventListener("scroll", lazyload);
         window.addEventListener("resize", lazyload);
         window.addEventListener("orientationChange", lazyload);
@@ -125,6 +123,20 @@
 
 
 </script>
-
+<!-- Matomo -->
+<script type="text/javascript">
+  var _paq = window._paq || [];
+  /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u="https://piwik.sofasurfer.org/";
+    _paq.push(['setTrackerUrl', u+'matomo.php']);
+    _paq.push(['setSiteId', '37']);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+    g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+  })();
+</script>
+<!-- End Matomo Code -->
 </body>
 </html>
