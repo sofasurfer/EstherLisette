@@ -600,27 +600,29 @@ figure.img-half.right {
     margin-left: 15px;
 }
 
+
+
 .p-caption{
 
-    margin-top: -30px;
-    margin-bottom: 25px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-bottom: -3px;
+
 }
 .p-caption p{
     display: block;
     font-size: 20px;
+    line-height: 20px;
     padding: 0;
     margin: 0;
     /*height: 30px;*/
 
-    padding-top: 10px;
+    padding-top: 13px;
     padding-left: 50px;
     /*line-height: 50px;*/
 
 }
-figure .p-caption{
-    margin-top: 0px;
-    margin-bottom: 0px;
-}
+
 
 
 .hide-desktop{
@@ -854,7 +856,6 @@ figure .p-caption{
 
     figure.img-half,
     figure.img-full{
-        margin-bottom: 25px;
         margin-left: -25px;
         margin-right: -25px;      
     }
@@ -870,9 +871,8 @@ figure .p-caption{
         padding-left: 10px;
         padding-right: 10px;
     }
-    .p-caption p{
-        padding-left: 15px;
-    }
+
+    
     .padding p{
         padding-right: 0px;
     }    
@@ -930,13 +930,16 @@ figure .p-caption{
     }
     .text-indent p {
         text-indent: 20px;
-    }    
+    }
     .small-link{
         padding-left: 25px;
         padding-right: 25px;
     }
     .p-caption p{
+        margin-top: 0px;
+        padding-top: 10px;       
         font-size: 1.1rem;
+        line-height: 1.1rem;
         padding-left: 15px;
     }
     #navbarHeader{
