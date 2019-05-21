@@ -240,6 +240,10 @@ body.about figure{
     margin-bottom: 50px;
 }
 
+body.blog .hide-mobile figure{
+    margin-top: 7px;
+}
+
 .c-offcanvas-trigger span:nth-child(1), .c-offcanvas-trigger span:nth-child(3) {
     -webkit-transition: all .2s ease;
     transition: all .2s ease;
@@ -635,6 +639,16 @@ figure .p-caption{
     }
 }
 
+@media only screen and ( max-height: 600px) {
+
+    .menu-item{
+        font-size: 2rem!important;
+        padding-bottom: 5px!important;
+    }
+
+}
+
+
 
 @media only screen and (min-width: 990px ) and ( max-width: 1300px) {
     .col-wrap{
@@ -691,8 +705,31 @@ figure .p-caption{
     main{
         margin-top: 160px;
     }
+
     body.home main{
-        margin-top: 50px;
+        margin-top: 138px;
+    }
+    body.project .navigation{
+        width: 100%;    
+    }
+    body .container.main{
+        max-width: 100%;
+    }
+    body.blog .col-lg-8{
+        max-width: 100%;
+        flex: 0 0 100%;
+    }
+    body.blog article .img-fluid{
+        width: 100%;
+    }
+
+    .container-fluid.main{
+        padding-top: 120px;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    .home .container-fluid.main{
+        padding-top: 0px;
     }
     header.main{
         position: fixed;
@@ -745,19 +782,7 @@ figure .p-caption{
     hr.article{
         height: 3px;
     }
-    body.project .navigation{
-        width: 100%;    
-    }
-    body .container.main{
-        max-width: 100%;
-    }
-    body.blog .col-lg-8{
-        max-width: 100%;
-        flex: 0 0 100%;
-    }
-    body.blog article .img-fluid{
-        width: 100%;
-    }
+
 
     footer{
         margin-top: 50px;
@@ -835,14 +860,7 @@ figure .p-caption{
         margin-right: -25px;
     }
 
-    .container-fluid.main{
-        padding-top: 120px;
-        padding-left: 0px;
-        padding-right: 0px;
-    }
-    .home .container-fluid.main{
-        padding-top: 90px;
-    }
+
     .p-caption{
         padding-left: 10px;
         padding-right: 10px;
