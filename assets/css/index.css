@@ -138,6 +138,7 @@ p{
     line-height: 23px;    
 }
 
+.padding h3,
 .padding p{
     padding-right: 70px;
 }
@@ -872,7 +873,7 @@ figure.img-half.right {
         padding-right: 10px;
     }
 
-    
+    .padding h3,
     .padding p{
         padding-right: 0px;
     }    
