@@ -85,6 +85,9 @@ strong{
     display: inline-block;
     margin-top: 20px;    
 }
+.small p a.nopadding{
+    margin-top: 0px;
+}
 .text-indent p{
     text-indent: 50px;    
 }
