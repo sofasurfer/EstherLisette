@@ -16,6 +16,8 @@ Icon
 /site/cache/*
 !/site/cache/index.html
 
+*.code-workspace
+
 # -------------SECURITY-------------
 # NEVER publish these files via Git!
 # -------------SECURITY-------------

@@ -7,7 +7,7 @@
     <div class="row">
         <div class="col-md-12">
             <center>
-                © 2019 Esther-Lisette Ganz
+                © <?php echo date("Y"); ?> Esther-Lisette Ganz
                 <?php 
                 if( $page->impressum() ){
                     echo $page->impressum()->kirbytext();
@@ -73,11 +73,9 @@
 
     });
 
-    /*
-    Lacy Load
-    */
     document.addEventListener("DOMContentLoaded", function() {
       var lazyloadImages;    
+
       if ("IntersectionObserver" in window) {
         lazyloadImages = document.querySelectorAll(".lazy");
         var imageObserver = new IntersectionObserver(function(entries, observer) {
@@ -90,16 +88,19 @@
             }
           });
         });
+
         lazyloadImages.forEach(function(image) {
           imageObserver.observe(image);
         });
       } else {  
         var lazyloadThrottleTimeout;
         lazyloadImages = document.querySelectorAll(".lazy");
+        
         function lazyload () {
           if(lazyloadThrottleTimeout) {
             clearTimeout(lazyloadThrottleTimeout);
           }    
+
           lazyloadThrottleTimeout = setTimeout(function() {
             var scrollTop = window.pageYOffset;
             lazyloadImages.forEach(function(img) {
@@ -115,6 +116,7 @@
             }
           }, 20);
         }
+
         document.addEventListener("scroll", lazyload);
         window.addEventListener("resize", lazyload);
         window.addEventListener("orientationChange", lazyload);
