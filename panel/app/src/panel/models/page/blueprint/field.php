@@ -18,7 +18,7 @@ class Field extends Obj {
   public $required  = false;
   public $translate = true;
 
-  public function __construct($params = array(), $model, $formtype = 'default') {
+  public function __construct($params = array(), $model = false, $formtype = 'default') {
 
     if(!empty($params['extends'])) {
       $params = $this->_extend($params);

@@ -69,7 +69,9 @@ class Changes {
     foreach($data as $field => $value) {    
 
       $object = $this->model->{$field}();
-
+      if(empty($object) || is_int($object)){
+        continue;
+      }
       if(!method_exists($object, '__toString')) {
         continue;
       }

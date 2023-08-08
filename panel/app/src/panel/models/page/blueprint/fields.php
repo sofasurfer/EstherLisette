@@ -10,7 +10,7 @@ class Fields extends Collection {
   protected $model;
   protected $formtype;
 
-  public function __construct($fields = array(), $model, $formtype = 'default') {
+  public function __construct($fields = array(), $model = false, $formtype = 'default') {
 
     if(empty($fields) or !is_array($fields)) $fields = array();
 
